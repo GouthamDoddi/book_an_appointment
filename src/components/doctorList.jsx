@@ -46,7 +46,7 @@ export default function TitlebarImageList() {
             <img src={item.img} alt={item.name} />
             <ImageListItemBar
               title={item.name}
-              subtitle={<span>by: {item.specialization}</span>}
+              subtitle={<span>Speciality: {item.specialization}</span>}
               actionIcon={
                 <IconButton aria-label={`info about ${item.cost_per_appointment}`} className={classes.icon}>
                   <ArrowForwardIosIcon onClick={() => dispatch(selectedDoctor(item)) }/>
